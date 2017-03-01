@@ -1,0 +1,39 @@
+<div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Total calls count</div>
+    <div class="panel-body">
+      <div style="height: 250px; width: 100%">
+        <canvas id="count" class="chart chart-line" chart-data="$ctrl.countData"
+                chart-labels="$ctrl.labels" chart-series="$ctrl.countSeries" chart-options="$ctrl.countOptions"
+                chart-dataset-override="$ctrl.countDataset">
+        </canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Average success/failure latency</div>
+    <div class="panel-body">
+      <div style="height: 250px; width: 100%">
+        <canvas id="average" class="chart chart-bar" chart-data="$ctrl.averageData"
+                chart-labels="$ctrl.labels" chart-series="$ctrl.averageSeries" chart-options="$ctrl.averageOptions"
+                chart-dataset-override="$ctrl.averageDataset">
+        </canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">CircuitBreaker status</div>
+    <div class="panel-body">
+      <div style="height: 250px; width: 100%">
+        <canvas id="status" class="chart chart-bar" chart-data="$ctrl.statusData"
+                chart-labels="$ctrl.labels" chart-series="$ctrl.statusSeries" chart-options="$ctrl.statusOptions"
+                chart-dataset-override="$ctrl.statusDataset">
+        </canvas>
+      </div>
+    </div>
+  </div>
+
+</div>
